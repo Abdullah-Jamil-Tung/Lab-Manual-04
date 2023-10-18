@@ -1,0 +1,128 @@
+Lab Task #1
+
+/*1. Write a program in C++ to find the sum of first 10 natural numbers. */
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	//Defining variables and taking inputs
+	int y, sum =0;
+	for (int x=1; x<=10; x++){
+		
+	cout<<"Input natural number "<<x<<" = ";
+	cin>>y;
+	cout<<endl;
+	
+	sum=sum + y;}
+	
+	cout<<"The sum of the first ten natural numbers = "<<sum<<endl;
+}
+
+
+
+
+
+
+
+Lab Task #2
+
+/* 2.	Write a C++ program to Print a Table of any Number. */
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	//Defining variables and taking inputs
+	int num1, num2 = 1 , sum;
+	cout<<"Input the table number = ";
+	cin>>num1;
+	cout<<endl;
+	
+	//Calculating and giving output
+	for (int x=1; x<=10; x++){
+	
+	sum = num1 * num2;
+	cout<<num1<<" * "<<num2<<" = "<<sum<<endl;
+	num2 = num2 + 1;}
+}
+
+
+
+
+
+
+
+
+
+
+Lab Task #3
+
+
+
+/*3.	Write a Program to Generate Factorial. A Certain Number Factorial of any number is the product of an integer and all the integers below it for example factorial of 4 is: 4! = 4 * 3 * 2 * 1 = 24 */   
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	//Defining variables and taking inputs
+	int x,y,z,sum =1;
+	cout<<"Input the required number two times = ";
+	cin>>y>>z;
+	cout<<endl;
+	
+	//Generating factorial for the input
+	for (x = 1; x<=z; x++){
+	
+	sum = sum * y;
+	y = y -1;}
+	
+	cout<<z<<"! = "<<sum;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+Lab Task #4
+
+
+
+/* 4.	Write a C++ program to generate a Fibonacci sequence up to a certain number input by the user. */ 
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	//Defining variables and taking inputs
+	int a , b, c, limit;
+	cout<<"Enter the values for a and b"<<endl;
+	cout<<"a = ";
+	cin>>a;
+	cout<<endl;
+	cout<<"b = ";
+	cin>>b;
+	cout<<endl;
+	cout<<"Enter the limit of the series = ";
+	cin>>limit;
+	
+	//Generating Fibonnaci sequence
+	for (int n=1; n<=limit; n++){
+    
+	c =  a + b ;
+	a = b ;
+	b = c ;
+	cout<<b<<" , ";}
+}
